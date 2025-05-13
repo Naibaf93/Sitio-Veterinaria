@@ -24,3 +24,20 @@ button{
 button:hover{
     background-color: limegreen;
 }
+
+ul {
+    list-style-type: none;/* Elimina los puntos de la lista*/
+    margin: 0;/* Elimina los margenes*/
+    padding: 0;/* Elimina los espacios internos */
+}
+
+li{
+    background-color: #F1F1F1;/* Color fondo */
+    padding: 10px;/* Espacio interno */
+    border-bottom: 1px solid #ccc;/* Border inferior */
+    text-align: center;/* Alineación del texto */
+}
+
+.textoCentrado{
+    text-align: center;
+}
