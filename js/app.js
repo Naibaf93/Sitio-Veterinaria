@@ -19,3 +19,13 @@ class Perro extends Animal{
         return `${this.nombre} - ${this.peso} kg - ${this.edad} año(s)- ${this.raza}`
     }
 }
+
+class Gato extends Animal{
+    constructor(nombre, peso, edad, sexo){
+        super(nombre, peso, edad);
+        this.sexo = sexo;
+    }
+    informacion(){
+        return `${this.nombre} - ${this.peso} kg - ${this.edad} año(s)- ${this.sexo}`
+    }
+}
