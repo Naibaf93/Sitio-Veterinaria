@@ -16,7 +16,7 @@ class Perro extends Animal{
         this.raza = raza;
     }
     informacion(){
-        return `${this.nombre} - ${this.peso} kg - ${this.edad} año(s)- ${this.raza}`
+        return `${this.nombre} - ${this.peso} kg - ${this.edad} año(s) - ${this.raza}`
     }
 }
 
@@ -26,22 +26,32 @@ class Gato extends Animal{
         this.sexo = sexo;
     }
     informacion(){
-        return `${this.nombre} - ${this.peso} kg - ${this.edad} año(s)- ${this.sexo}`
+        return `${this.nombre} - ${this.peso} kg - ${this.edad} año(s) - ${this.sexo}`
     }
 }
 
 class Conejo extends Animal{
     constructor(nombre, peso, edad, color){
         super(nombre, peso, edad);
-        this.sexo = color;
+        this.color = color;
     }
     informacion(){
-        return `${this.nombre} - ${this.peso} kg - ${this.edad} año(s)- ${this.color}`
+        return `${this.nombre} - ${this.peso} kg - ${this.edad} año(s) - ${this.color}`
     }
 }
 
 let perro1 = new Perro('Zarze', 30, 6, 'Pitbull');
 let gato1 = new Gato('Hayley', 5, 10, 'Hembra');
-let conejo1 = new Conejo('Canelita', 4, 5, 'Hembra');
+let conejo1 = new Conejo('Canelita', 4, 5, 'Marron');
 
 let animales =[perro1, gato1, conejo1];
+
+function mostrarAnimales(){
+    let lista = document.getElementById('listaAnimales');
+
+    for( let animal of animales){
+        let item = document.createElement('li');
+        item.innerText = animal.informacion();
+        lista.appendChild(item);
+    }
+}
