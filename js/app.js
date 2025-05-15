@@ -39,3 +39,7 @@ class Conejo extends Animal{
         return `${this.nombre} - ${this.peso} kg - ${this.edad} año(s)- ${this.color}`
     }
 }
+
+let perro1 = new Perro('Zarze', 30, 6, 'Pitbull');
+let gato1 = new Gato('Hayley', 5, 10, 'Hembra');
+let conejo1 = new Conejo('Canelita', 4, 5, 'Hembra');
