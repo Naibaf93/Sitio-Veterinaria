@@ -43,3 +43,5 @@ class Conejo extends Animal{
 let perro1 = new Perro('Zarze', 30, 6, 'Pitbull');
 let gato1 = new Gato('Hayley', 5, 10, 'Hembra');
 let conejo1 = new Conejo('Canelita', 4, 5, 'Hembra');
+
+let animales =[perro1, gato1, conejo1];
