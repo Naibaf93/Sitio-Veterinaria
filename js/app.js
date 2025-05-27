@@ -40,14 +40,15 @@ class Conejo extends Animal{
     }
 }
 
-let perro1 = new Perro('Zarze', 30, 6, 'Pitbull');
+let perro1 = new Perro('Zarze', 30, 6, 'Stanford pitbull');
 let gato1 = new Gato('Hayley', 5, 10, 'Hembra');
 let conejo1 = new Conejo('Canelita', 4, 5, 'Marron');
 let perro2 = new Perro('Gatsby', 32, 11, 'Pitbull');
 let gato2 = new Gato('Momo', 6, 2, 'Macho');
 let conejo2 = new Conejo('Copito', 5, 6, 'Blanco');
+let perro3 = new Perro('Moloch', 28, 2, 'American Pitbull Terrier');
 
-let animales =[perro1, gato1, conejo1, perro2, gato2, conejo2];
+let animales =[perro1, gato1, conejo1, perro2, gato2, conejo2, perro3];
 
 function mostrarAnimales(){
     let lista = document.getElementById('listaAnimales');
