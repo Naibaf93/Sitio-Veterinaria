@@ -47,8 +47,9 @@ let perro2 = new Perro('Gatsby', 32, 11, 'Pitbull');
 let gato2 = new Gato('Momo', 6, 2, 'Macho');
 let conejo2 = new Conejo('Copito', 5, 6, 'Blanco');
 let perro3 = new Perro('Moloch', 28, 2, 'American Pitbull Terrier');
+let gato3 = new Gato('Kobu', 3, 1, 'Macho');
 
-let animales =[perro1, gato1, conejo1, perro2, gato2, conejo2, perro3];
+let animales =[perro1, gato1, conejo1, perro2, gato2, conejo2, perro3, gato3];
 
 function mostrarAnimales(){
     let lista = document.getElementById('listaAnimales');
